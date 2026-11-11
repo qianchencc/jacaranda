@@ -10,7 +10,7 @@ Serve `dist/` with a static HTTP server. There is no build step, package install
 python3 -m http.server 8000 --directory dist
 ```
 
-Open http://localhost:8000/ in a browser with WebGL 2 support.
+Open http://localhost:8000/ in a browser with WebGL 2 support. The Sites hosting manifest preserves the deployment configuration and project identity.
 
 ## Explore
 
