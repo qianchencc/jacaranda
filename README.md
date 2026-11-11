@@ -2,6 +2,12 @@
 
 An interactive miniature of a fictional Sydney street corner during jacaranda season. The English editorial interface surrounds a cream three-storey house, one intricate wraparound veranda with a thin charcoal canopy, four individually composed jacarandas, a violet bench, a small bookshop and warm street lamps.
 
+## Reusable creation skill
+
+The Chinese-language [Craft Interactive Miniatures skill](skills/craft-interactive-miniatures/SKILL.md) distils the Jacaranda project's composition, modelling, lighting, object interactions, coherent wind and petal lifecycle, and verification methods. It includes the failed approaches and their corrections, links to the existing evidence, and a reusable scene brief. Read the main skill first, then load the relevant references as needed.
+
+The skill is stored in this repository; it does not imply installation into a personal skills directory. Its case notes distinguish verified geometry and interaction behaviour from browser GPU appearance and frame rate, which remain outside the saved evidence.
+
 ## Run
 
 Serve `dist/` with a static HTTP server. There is no build step, package installation, API key, account integration, CDN or remote font dependency. JavaScript modules require HTTP; do not open the HTML directly through a `file:` URL.
