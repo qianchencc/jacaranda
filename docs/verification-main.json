@@ -1,0 +1,133 @@
+{
+  "sourceSHA256": "20a92d9c11dff95fa74e147bc75897d62fd4120bfe69bd113ec3b0d34f5c6541",
+  "mode": "mock-webgl",
+  "tests": [
+    {
+      "name": "Initial scene and all new interfaces initialise",
+      "passed": true
+    },
+    {
+      "name": "Time transition midpoint matches current-to-target blend",
+      "passed": true
+    },
+    {
+      "name": "Interrupted time tween starts without numeric jump",
+      "passed": true
+    },
+    {
+      "name": "Range endpoints/intermediate time, window variation and physical lights agree",
+      "passed": true
+    },
+    {
+      "name": "Clock carries a rounded minute into the next hour",
+      "passed": true
+    },
+    {
+      "name": "Range input interrupts evening and reaches selected value",
+      "passed": true
+    },
+    {
+      "name": "Door can reverse during opening and reaches both exact endpoints",
+      "passed": true
+    },
+    {
+      "name": "Interior light and outside spill respond to door/light state without overshoot",
+      "passed": true
+    },
+    {
+      "name": "New view interrupts previous camera interpolation cleanly",
+      "passed": true
+    },
+    {
+      "name": "Reset cancels deferred journal panel",
+      "passed": true
+    },
+    {
+      "name": "Zoom and Escape cancel deferred panel opening",
+      "passed": true
+    },
+    {
+      "name": "Journal opens requested page, wraps pages, restores focus and clears highlight",
+      "passed": true
+    },
+    {
+      "name": "Journal detail link closes drawer and selects matching view",
+      "passed": true
+    },
+    {
+      "name": "Postcard modal freezes controls, flips and closes with focus restored",
+      "passed": true
+    },
+    {
+      "name": "Switching postcard to journal leaves exactly one panel open",
+      "passed": true
+    },
+    {
+      "name": "Pointer dragging over a real hit target does not activate it",
+      "passed": true
+    },
+    {
+      "name": "Primary pointer click on actual door target toggles door",
+      "passed": true
+    },
+    {
+      "name": "Both framed journal covers remain pickable from the visible front",
+      "passed": true
+    },
+    {
+      "name": "Purple bench remains pickable in front of the architecture",
+      "passed": true
+    },
+    {
+      "name": "Orbit gesture cancels an already scheduled postcard",
+      "passed": true
+    },
+    {
+      "name": "Two-pointer pinch cannot trigger a click action",
+      "passed": true
+    },
+    {
+      "name": "Secondary/right pointer click does not activate a place",
+      "passed": true
+    },
+    {
+      "name": "A front-door hit is rejected through the solid rear wall",
+      "passed": true
+    },
+    {
+      "name": "Pausing evening during its initial fade freezes the light immediately",
+      "passed": true
+    },
+    {
+      "name": "Evening playback settles at night and stops automatic orbit",
+      "passed": true
+    },
+    {
+      "name": "Back-forward-cache pagehide preserves pointer handlers",
+      "passed": true
+    },
+    {
+      "name": "390×844 phone overview reaches distance81 rather than clamping at55",
+      "passed": true
+    },
+    {
+      "name": "Height-only phone resize recomputes the overview fit",
+      "passed": true
+    },
+    {
+      "name": "360×640 phone overview reaches distance106 and sheet hides scene hotspots",
+      "passed": true
+    },
+    {
+      "name": "Desktop journal eases projection to56 and restores offset minus138",
+      "passed": true
+    },
+    {
+      "name": "All final light/door values remain finite and bounded",
+      "passed": true
+    }
+  ],
+  "passed": 31,
+  "failed": 0,
+  "scope": "Real main.js, THREE geometry/camera/raycaster/OrbitControls, Canvas textures, and app handlers. DOM/renderer/clock/timers mocked in scratch only. No GPU/browser rendering claim."
+}

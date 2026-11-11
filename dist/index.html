@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-light="night">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#282b41"><meta name="description" content="A little Sydney street corner, held in bloom. Sit beneath the jacarandas, open the bookshop door, and find the stories in its windows.">
+<title>Jacaranda Days — A Little Sydney</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23282b41'/%3E%3Ctext x='16' y='47' font-size='48' fill='%23c1a0d0' font-family='Georgia' font-style='italic'%3Ej%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body data-mode="night">
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 6M4 3v6h6"/></symbol>
+<symbol id="i-orbit" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-30 12 12)"/><circle cx="12" cy="12" r="2.5"/></symbol>
+<symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 8c-7-10-13 2-5 4-9 5 1 14 5 5 4 9 14 0 5-5 8-2 2-14-5-4Z"/><circle cx="12" cy="12" r="1.5"/></symbol>
+<symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+<symbol id="i-sound" viewBox="0 0 24 24"><path d="m12 4-6 5H3v6h3l6 5V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+</defs></svg>
+<main class="experience" id="experience">
+<section class="stage" id="stage" aria-label="Interactive Sydney street corner">
+<div class="sky-disc" aria-hidden="true"></div><div class="sky-haze" aria-hidden="true"></div>
+<canvas id="scene" tabindex="0" aria-label="3D Sydney street corner. Drag to orbit, scroll or pinch to zoom. Click the bench, door, posters or veranda to explore. Arrow keys rotate; plus and minus zoom; Home returns to the whole street."></canvas>
+<div class="scene-loader" id="loader"><span>✳︎</span><p>A little Sydney is taking shape.</p></div>
+<div class="hotspots" id="hotspots" aria-label="Places in the scene">
+<button class="hotspot" data-place="bench" aria-label="Open a harbour memory from the purple bench"><span class="hotspot-dot"></span><span class="hotspot-label">Stay a moment</span></button>
+<button class="hotspot" data-place="journal" aria-label="Read the journal at the bookshop"><span class="hotspot-dot"></span><span class="hotspot-label">The corner journal</span></button>
+<button class="hotspot" data-place="door" aria-label="Open the bookshop door"><span class="hotspot-dot"></span><span class="hotspot-label" id="door-label">A light left on</span></button>
+<button class="hotspot" data-place="balcony" aria-label="Look closely at the veranda"><span class="hotspot-dot"></span><span class="hotspot-label">Look up</span></button>
+</div>
+<div class="scene-tools" aria-label="Scene controls"><button class="icon-button" id="orbit" aria-label="Start slow orbit" aria-pressed="false" title="Slow orbit"><svg><use href="#i-orbit"/></svg></button><button class="icon-button active" id="petals" aria-label="Pause breeze and petals" aria-pressed="true" title="Breeze & petals"><svg><use href="#i-flower"/></svg></button><span class="tool-rule"></span><button class="icon-button" id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button><button class="icon-button" id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button><button class="icon-button" id="reset" aria-label="Return to the whole street" title="Return to the whole street"><svg><use href="#i-reset"/></svg></button><button class="icon-button" id="fullscreen" aria-label="Enter full screen" title="Full screen"><svg><use href="#i-expand"/></svg></button></div>
+<div class="scene-caption" id="scene-caption"><span id="scene-chapter">01 — THE WHOLE CORNER</span><p id="scene-line">Somewhere to stay a little longer.</p></div>
+<div class="scene-bottom"><span class="gesture-hint">DRAG TO WANDER <i>·</i> SCROLL TO COME CLOSER</span><button class="sound-button" id="sound" aria-pressed="false" aria-label="Turn on gentle ambient sound"><svg><use href="#i-sound"/></svg><span>Sound off</span></button></div>
+<div class="error-panel" id="error-panel" hidden><span>THE GRAPHICS PAUSED</span><h2>A little pause.</h2><p>The miniature needs WebGL. You can still read the corner journal and open the harbour postcard, or return in a browser with graphics acceleration.</p><button id="retry" type="button">Try the scene again</button></div>
+<div class="sr-only" aria-live="polite" id="scene-status">Loading the street corner.</div>
+</section>
+<aside class="editorial" aria-label="Jacaranda Days magazine">
+<header class="masthead"><div class="issue-line"><span>VOL. 01</span><span>SPRING / SYDNEY</span></div><a class="city" href="./" aria-label="Jacaranda Days home">SYDNEY</a><p class="issue-label">THE JACARANDA ISSUE · NOVEMBER</p></header>
+<h1>Jacaranda<br><em>Days</em></h1>
+<p class="standfirst">A little corner of Sydney,<br>where spring falls softly.</p><span class="short-rule"></span>
+<nav class="places" aria-label="Explore the corner">
+<button class="place-link" data-action="bench"><span class="eyebrow">A MOMENT TO STAY</span><strong>Under the jacaranda.</strong><span class="place-description">Sit down. Open a harbour memory.</span><span class="link-arrow">↗</span></button>
+<button class="place-link" data-action="journal"><span class="eyebrow">THE CORNER EDIT</span><strong>Stories from the street.</strong><span class="place-description">A little journal behind the windows.</span><span class="link-arrow">↗</span></button>
+<button class="place-link" data-action="door"><span class="eyebrow">A LIGHT LEFT ON</span><strong>The door is open.</strong><span class="place-description">Step closer to the little bookshop.</span><span class="link-arrow">↗</span></button>
+</nav>
+<div class="view-list" aria-label="Choose a view"><span class="eyebrow">VIEWS OF THE CORNER</span><div><button id="view-overview" class="view-button active" aria-pressed="true">Overview</button><button id="view-bench" class="view-button" aria-pressed="false">By the bench</button><button id="view-balcony" class="view-button" aria-pressed="false">The veranda</button></div></div>
+<button class="back-street" id="back-street" hidden>← Back to the street</button>
+<div class="colophon"><span>33° S / 151° E</span><p>A season to remember.</p></div>
+<div class="light-dock"><div class="light-caption"><span>THE LIGHT OF SYDNEY</span><output id="light-time">08:15 PM</output></div><div class="light-options" role="group" aria-label="Time of day"><button class="light-button" data-mode="day" aria-pressed="false">Daylight</button><button class="light-button" data-mode="dusk" aria-pressed="false">Golden hour</button><button class="light-button selected" data-mode="night" aria-pressed="true">After dark</button></div><input type="range" id="light-range" min="0" max="100" value="100" step="1" aria-label="Move continuously from daylight to after dark"><button class="evening-button" id="evening" aria-pressed="false">Let the evening unfold <span>↗</span></button></div>
+</aside>
+</main>
+<dialog id="postcard-dialog" class="postcard-dialog" aria-labelledby="postcard-title">
+<button class="dialog-close" id="postcard-close" aria-label="Close the harbour postcard">Back to the street <svg><use href="#i-close"/></svg></button>
+<div class="postcard-stage"><div class="postcard-object" id="postcard-object"><div class="postcard-front"><img id="harbour-art" src="./assets/harbour-postcard.png" alt="An original lilac and peach illustration of Sydney Harbour at evening, with jacaranda flowers, the Opera House and Harbour Bridge." width="1536" height="1024"><span class="postcard-issue">SYDNEY, IN A SOFTER LIGHT.</span></div><div class="postcard-back"><div class="postcard-address"><span class="postcard-stamp">S Y D N E Y<br>✳︎<br>33° SOUTH</span><p>To a slower afternoon,<br>wherever you are.</p><span class="postcard-address-line"></span><span class="postcard-address-line"></span></div><div class="postcard-note"><span class="eyebrow">A LINE TO REMEMBER</span><textarea id="postcard-message" aria-label="Your postcard note" maxlength="220" placeholder="Write a little memory…">Some places ask for nothing but a little of your time.</textarea><p>With love, from the jacarandas.</p></div></div></div></div>
+<div class="postcard-footer"><h2 id="postcard-title">A moment by the water.</h2><p>A memory opened from a quiet seat.</p><div class="postcard-actions"><button id="postcard-flip">Turn the card ↻</button><button id="postcard-save">Keep this postcard ↓</button></div></div>
+</dialog>
+<dialog id="journal-dialog" class="journal-dialog" aria-labelledby="journal-title">
+<div class="journal-header"><span>THE CORNER EDIT</span><button id="journal-close" aria-label="Close the corner journal"><svg><use href="#i-close"/></svg></button></div><div class="journal-content" id="journal-content"><div class="journal-meta"><span id="journal-category">FIELD NOTES</span><span>NOVEMBER</span></div><h2 id="journal-title">The violet hour.</h2><div class="journal-cover-wrap"><img id="journal-cover" alt="Original Sidestreet journal cover" width="600" height="780"><span class="cover-caption">AN ORIGINAL SIDESTREET EDITION</span></div><p class="journal-deck" id="journal-deck"></p><p class="journal-copy" id="journal-copy"></p><blockquote id="journal-quote"></blockquote><button class="journal-look" id="journal-look">Find this detail in the street <span>↗</span></button></div><div class="journal-footer"><button id="journal-prev" aria-label="Previous journal story">←</button><span id="journal-pagination">01 / 02</span><button id="journal-next" aria-label="Next journal story">→</button></div>
+</dialog>
+<script type="module" src="./main.js"></script>
+</body></html>

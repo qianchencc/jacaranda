@@ -1,0 +1,819 @@
+{
+  "revision": 4,
+  "purpose": "Coherent tree wind, blossom release, real contact and persistent accumulation",
+  "verification_boundary": "Real production modules and geometry with CPU/source checks. Application DOM, clock and renderer mocked. No WebGL driver compilation, browser GPU frame-rate or GPU appearance certification. Offline Blender inspection images are labelled separately.",
+  "reports": {
+    "application": {
+      "sourceSHA256": "353c38c6486102cc3732ed200f919e0265e2b53559e2004bca8f6137d8b097f0",
+      "mode": "mock-webgl",
+      "tests": [
+        {
+          "name": "Initial scene and all new interfaces initialise",
+          "passed": true
+        },
+        {
+          "name": "Time transition midpoint matches current-to-target blend",
+          "passed": true
+        },
+        {
+          "name": "Interrupted time tween starts without numeric jump",
+          "passed": true
+        },
+        {
+          "name": "Range endpoints/intermediate time, window variation and physical lights agree",
+          "passed": true
+        },
+        {
+          "name": "Clock carries a rounded minute into the next hour",
+          "passed": true
+        },
+        {
+          "name": "Range input interrupts evening and reaches selected value",
+          "passed": true
+        },
+        {
+          "name": "Door can reverse during opening and reaches both exact endpoints",
+          "passed": true
+        },
+        {
+          "name": "Interior light and outside spill respond to door/light state without overshoot",
+          "passed": true
+        },
+        {
+          "name": "New view interrupts previous camera interpolation cleanly",
+          "passed": true
+        },
+        {
+          "name": "Reset cancels deferred journal panel",
+          "passed": true
+        },
+        {
+          "name": "Zoom and Escape cancel deferred panel opening",
+          "passed": true
+        },
+        {
+          "name": "Journal opens requested page, wraps pages, restores focus and clears highlight",
+          "passed": true
+        },
+        {
+          "name": "Journal detail link closes drawer and selects matching view",
+          "passed": true
+        },
+        {
+          "name": "Postcard modal freezes controls, flips and closes with focus restored",
+          "passed": true
+        },
+        {
+          "name": "Switching postcard to journal leaves exactly one panel open",
+          "passed": true
+        },
+        {
+          "name": "Pointer dragging over a real hit target does not activate it",
+          "passed": true
+        },
+        {
+          "name": "Primary pointer click on actual door target toggles door",
+          "passed": true
+        },
+        {
+          "name": "Both framed journal covers remain pickable from the visible front",
+          "passed": true
+        },
+        {
+          "name": "Purple bench remains pickable in front of the architecture",
+          "passed": true
+        },
+        {
+          "name": "Orbit gesture cancels an already scheduled postcard",
+          "passed": true
+        },
+        {
+          "name": "Two-pointer pinch cannot trigger a click action",
+          "passed": true
+        },
+        {
+          "name": "Secondary/right pointer click does not activate a place",
+          "passed": true
+        },
+        {
+          "name": "A front-door hit is rejected through the solid rear wall",
+          "passed": true
+        },
+        {
+          "name": "Pausing evening during its initial fade freezes the light immediately",
+          "passed": true
+        },
+        {
+          "name": "Evening playback settles at night and stops automatic orbit",
+          "passed": true
+        },
+        {
+          "name": "Back-forward-cache pagehide preserves pointer handlers",
+          "passed": true
+        },
+        {
+          "name": "390×844 phone overview reaches distance81 rather than clamping at55",
+          "passed": true
+        },
+        {
+          "name": "Height-only phone resize recomputes the overview fit",
+          "passed": true
+        },
+        {
+          "name": "360×640 phone overview reaches distance106 and sheet hides scene hotspots",
+          "passed": true
+        },
+        {
+          "name": "Desktop journal eases projection to56 and restores offset minus138",
+          "passed": true
+        },
+        {
+          "name": "Breeze control freezes tree time, released petals and resting flowers together",
+          "passed": true
+        },
+        {
+          "name": "Day/night keeps wind continuous and updates its receiving shadows",
+          "passed": true
+        },
+        {
+          "name": "All final light/door values remain finite and bounded",
+          "passed": true
+        }
+      ],
+      "passed": 33,
+      "failed": 0,
+      "scope": "Real main.js, THREE geometry/camera/raycaster/OrbitControls, Canvas textures, and app handlers. DOM/renderer/clock/timers mocked in scratch only. No GPU/browser rendering claim."
+    },
+    "fallback": {
+      "sourceSHA256": "353c38c6486102cc3732ed200f919e0265e2b53559e2004bca8f6137d8b097f0",
+      "mode": "no-webgl",
+      "tests": [
+        {
+          "name": "No-WebGL branch retains fallback UI without throwing",
+          "passed": true
+        },
+        {
+          "name": "No-WebGL branch opens and closes journal through intended navigation",
+          "passed": true
+        },
+        {
+          "name": "No-WebGL branch opens and closes postcard without enabling scene controls",
+          "passed": true
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "scope": "Real main.js, THREE geometry/camera/raycaster/OrbitControls, Canvas textures, and app handlers. DOM/renderer/clock/timers mocked in scratch only. No GPU/browser rendering claim."
+    },
+    "wind_geometry": {
+      "result": "passed",
+      "generatedAt": "2026-11-11T09:20:52.487Z",
+      "source": "/workspace/sites/jacaranda-days-atelier/dist",
+      "sourceSha256": {
+        "vegetation.js": "27c56561d0ea237e5194723dae455a92d0c38862ccf3726dbe0412eba0d18e56",
+        "wind.js": "3fc3e01309b3837ccf30ec69254d6e8b758e062b7e49777fd7aa0a8bf432fa9c"
+      },
+      "checks": {
+        "maximumAnchorDisplacement": 0,
+        "maximumReleaseAnchorError": 5.321768619784236e-07,
+        "releaseSites": 1861,
+        "treeExcursions": [
+          {
+            "treeIndex": 0,
+            "sites": 363,
+            "maximumFromRestMetres": 0.3958518670547869,
+            "phase16To22MaximumMetres": 0.26126505107587705,
+            "phase16To22MeanMetres": 0.10041652940187115
+          },
+          {
+            "treeIndex": 1,
+            "sites": 494,
+            "maximumFromRestMetres": 0.3766516931856399,
+            "phase16To22MaximumMetres": 0.25695347639032157,
+            "phase16To22MeanMetres": 0.07862705841343608
+          },
+          {
+            "treeIndex": 2,
+            "sites": 501,
+            "maximumFromRestMetres": 0.38471957179162236,
+            "phase16To22MaximumMetres": 0.13872581052073407,
+            "phase16To22MeanMetres": 0.07081173962267986
+          },
+          {
+            "treeIndex": 3,
+            "sites": 503,
+            "maximumFromRestMetres": 0.38923906482401177,
+            "phase16To22MaximumMetres": 0.1314089650626791,
+            "phase16To22MeanMetres": 0.05787039047331895
+          }
+        ],
+        "minimumJacobianDeterminant": 0.7453471796505717,
+        "maximumJacobianDeterminant": 1.1819074131980687,
+        "maximumNormalUnitError": 3.3306690738754696e-16,
+        "gustRange": [
+          4.67173601787101e-08,
+          0.9993500152401451
+        ],
+        "airSpeedMetresPerSecond": {
+          "street": [
+            0.11609134098967219,
+            0.476049381918962
+          ],
+          "crown": [
+            0.20015748446058124,
+            0.8202225118074115
+          ]
+        },
+        "shaderVariantsChecked": 18,
+        "sharedUniformObjects": 1
+      },
+      "limits": [
+        "CPU math, geometry metadata, and shader-source injection checks only.",
+        "No WebGL rendering or GPU driver compilation performed.",
+        "CPU and GLSL use corresponding analytic equations; finite precision on GPU can differ slightly."
+      ]
+    },
+    "catch_surfaces": {
+      "surfaces": [
+        {
+          "id": "roof-flat",
+          "hits": 376,
+          "clear": 376,
+          "maxNearestError": 0,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "roof-parapet",
+          "hits": 73,
+          "clear": 73,
+          "maxNearestError": 1.7763568394002505e-15,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "chimney-top",
+          "hits": 208,
+          "clear": 208,
+          "maxNearestError": 2.6702880795426154e-07,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "veranda-awning",
+          "hits": 69,
+          "clear": 69,
+          "maxNearestError": 8.881784197001252e-16,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "veranda-deck",
+          "hits": 56,
+          "clear": 56,
+          "maxNearestError": 0,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "entry-upper-step",
+          "hits": 77,
+          "clear": 77,
+          "maxNearestError": 1.1920929798847624e-09,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        },
+        {
+          "id": "entry-lower-step",
+          "hits": 27,
+          "clear": 27,
+          "maxNearestError": 5.960465454535324e-10,
+          "aboveSurface": 0,
+          "solidAbove": 0,
+          "examples": []
+        }
+      ],
+      "tests": [
+        {
+          "label": "Upper front wall resolves outward",
+          "pass": true,
+          "evidence": {
+            "normal": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "depth": 0.03499999999999979,
+            "id": "upper-walls"
+          }
+        },
+        {
+          "label": "Rounded corner resolves diagonally",
+          "pass": true,
+          "evidence": {
+            "normal": {
+              "x": 0.7242470829514641,
+              "y": 0,
+              "z": 0.6895405447370697
+            },
+            "depth": 0.033504654798614864,
+            "id": "upper-walls"
+          }
+        },
+        {
+          "label": "Roof middle clear above deck",
+          "pass": true
+        },
+        {
+          "label": "Roof middle solid below deck",
+          "pass": true
+        },
+        {
+          "label": "Parapet interior lip pushes inward at its actual mesh height",
+          "pass": true,
+          "evidence": {
+            "capHeight": 8.815799217351577,
+            "contact": {
+              "normal": {
+                "x": 0,
+                "y": 0,
+                "z": -1
+              },
+              "depth": 0.020000000000000108,
+              "id": "parapet-cap"
+            }
+          }
+        },
+        {
+          "label": "Parapet outer lip pushes outward at its actual mesh height",
+          "pass": true,
+          "evidence": {
+            "normal": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "depth": 0.020000000000000108,
+            "id": "parapet-cap"
+          }
+        },
+        {
+          "label": "Parapet wall inner side pushes inward",
+          "pass": true,
+          "evidence": {
+            "normal": {
+              "x": 0,
+              "y": 0,
+              "z": -1
+            },
+            "depth": 0.020000000000000108,
+            "id": "parapet-wall"
+          }
+        },
+        {
+          "label": "Chimney solid",
+          "pass": true
+        },
+        {
+          "label": "Closed entry leaves collide",
+          "pass": true,
+          "evidence": {
+            "normal": {
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": -0.7071067811865476
+            },
+            "depth": 0.03821320343559632,
+            "id": "entry-door"
+          }
+        },
+        {
+          "label": "Open entrance center clears",
+          "pass": true
+        },
+        {
+          "label": "Alcove center is real free space",
+          "pass": true
+        }
+      ],
+      "benchmark": {
+        "calls": 700000,
+        "ms": 746.7535530000005,
+        "hits": 48321
+      },
+      "limitations": [
+        "Numeric actual-geometry raycasts; no GPU render",
+        "Awning normals follow the broad metal sheet slope; heights still follow actual ribs and overlapping cream cornice",
+        "Facade contact intentionally omits thin decorative sash, plants and ironwork"
+      ]
+    },
+    "lifecycle_desktop": {
+      "sourceSHA256": {
+        "main.js": "353c38c6486102cc3732ed200f919e0265e2b53559e2004bca8f6137d8b097f0",
+        "petals.js": "ab9e42510ad7b0ebdfadb2b71de275f487a52e16c3a8dfc5354219c63e183538",
+        "wind.js": "3fc3e01309b3837ccf30ec69254d6e8b758e062b7e49777fd7aa0a8bf432fa9c",
+        "vegetation.js": "27c56561d0ea237e5194723dae455a92d0c38862ccf3726dbe0412eba0d18e56",
+        "architecture.js": "3ca30832d3bfb988528ba954ace25e21c72ea3d3dca8a3d1d261b2a393e07d7f"
+      },
+      "mode": "desktop",
+      "tests": [
+        {
+          "name": "Initial accumulation exists on the actual flat roof and sloped awning",
+          "passed": true
+        },
+        {
+          "name": "Every pre-existing deposit is supported and normal-aligned on its declared surface",
+          "passed": true
+        },
+        {
+          "name": "Tree bases stay anchored while exposed crown tips have measurable motion",
+          "passed": true
+        },
+        {
+          "name": "Falling flowers are born at actual moving blossom sites",
+          "passed": true
+        },
+        {
+          "name": "Descending paths stop at the first actual roof, awning, or pavement",
+          "passed": true
+        },
+        {
+          "name": "Landing samplers agree with independent ray hits on the built mesh",
+          "passed": true
+        },
+        {
+          "name": "One minute of wind preserves finite positions and wall separation",
+          "passed": true
+        },
+        {
+          "name": "The live fall actually adds roof and awning deposits",
+          "passed": true
+        },
+        {
+          "name": "Zero elapsed time keeps both wind and fall still while light can change",
+          "passed": true
+        },
+        {
+          "name": "Near camera petals remain within the readable-size cap",
+          "passed": true
+        }
+      ],
+      "passed": 10,
+      "failed": 0,
+      "metrics": {
+        "initial": {
+          "time": 16.03333333333329,
+          "active": 237,
+          "stats": {
+            "emitted": 365,
+            "landed": 122,
+            "escaped": 12,
+            "wallContacts": 2060,
+            "initialDeposits": {
+              "roof-flat": 1050,
+              "roof-parapet": 100,
+              "chimney-top": 12,
+              "veranda-awning": 260,
+              "veranda-deck": 105,
+              "entry-upper-step": 28,
+              "entry-lower-step": 28
+            },
+            "landings": {
+              "roof-flat": 31,
+              "veranda-deck": 3,
+              "roof-parapet": 9,
+              "pavement": 75,
+              "chimney-top": 4
+            },
+            "sourceCount": 1738,
+            "warmupSeconds": 16
+          }
+        },
+        "roots": [
+          {
+            "tree": 0,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 1,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 2,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 3,
+            "maxDisplacement": 0
+          }
+        ],
+        "motion": [
+          {
+            "tree": 0,
+            "envelopeDiagonal": 0.5649831907980214,
+            "landmark": [
+              -4.4138994707528045,
+              5.43318855184638,
+              5.491212808352461
+            ]
+          },
+          {
+            "tree": 1,
+            "envelopeDiagonal": 0.5571546160346542,
+            "landmark": [
+              -1.8800669835122652,
+              9.815568839047698,
+              -0.5804293794927279
+            ]
+          },
+          {
+            "tree": 2,
+            "envelopeDiagonal": 0.5260916317746919,
+            "landmark": [
+              -1.2976896226336518,
+              11.199783853061808,
+              -2.3407912245770146
+            ]
+          },
+          {
+            "tree": 3,
+            "envelopeDiagonal": 0.5512825151542425,
+            "landmark": [
+              7.289714385755787,
+              10.04767350115476,
+              -0.019479856116100952
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "x": 0,
+            "z": 0,
+            "id": "roof-flat",
+            "height": 8.414999809265137
+          },
+          {
+            "x": 0,
+            "z": 3.02,
+            "id": "veranda-awning",
+            "height": 5.497229354465617
+          },
+          {
+            "x": 0,
+            "z": 4.25,
+            "id": "pavement",
+            "height": 0.474
+          }
+        ],
+        "viewExtents": {
+          "maximumSpanPx": 9.882648424126224,
+          "bench": 13.723500630059942,
+          "close": 13.71923546764525
+        },
+        "restingSupport": {
+          "maxGap": 0.022907378212781992,
+          "minDot": 0.9999999999999997,
+          "count": 1583
+        },
+        "meshSupport": {
+          "samples": 76,
+          "maxDisagreement": 2.6702880795426154e-07
+        },
+        "simulation": {
+          "durationSeconds": 60,
+          "minActive": 212,
+          "maxActive": 286,
+          "checkedReleases": 1605,
+          "bad": 0,
+          "penetrations": 0,
+          "maxDepth": 0,
+          "maxDisplacement": 0.026081794823786808,
+          "landingsBefore": {
+            "roof-flat": 31,
+            "veranda-deck": 3,
+            "roof-parapet": 9,
+            "pavement": 75,
+            "chimney-top": 4
+          },
+          "landingsAfter": {
+            "roof-flat": 286,
+            "veranda-deck": 14,
+            "roof-parapet": 89,
+            "pavement": 1068,
+            "chimney-top": 20,
+            "veranda-awning": 22
+          },
+          "escaped": 170,
+          "emitted": 1368
+        }
+      },
+      "scope": "Production CPU wind sampler, actual THREE geometry/rays, physical contact and release positions. GPU vertex shader and browser frame rate are not executed by this test."
+    },
+    "lifecycle_phone": {
+      "sourceSHA256": {
+        "main.js": "353c38c6486102cc3732ed200f919e0265e2b53559e2004bca8f6137d8b097f0",
+        "petals.js": "ab9e42510ad7b0ebdfadb2b71de275f487a52e16c3a8dfc5354219c63e183538",
+        "wind.js": "3fc3e01309b3837ccf30ec69254d6e8b758e062b7e49777fd7aa0a8bf432fa9c",
+        "vegetation.js": "27c56561d0ea237e5194723dae455a92d0c38862ccf3726dbe0412eba0d18e56",
+        "architecture.js": "3ca30832d3bfb988528ba954ace25e21c72ea3d3dca8a3d1d261b2a393e07d7f"
+      },
+      "mode": "phone",
+      "tests": [
+        {
+          "name": "Initial accumulation exists on the actual flat roof and sloped awning",
+          "passed": true
+        },
+        {
+          "name": "Every pre-existing deposit is supported and normal-aligned on its declared surface",
+          "passed": true
+        },
+        {
+          "name": "Tree bases stay anchored while exposed crown tips have measurable motion",
+          "passed": true
+        },
+        {
+          "name": "Falling flowers are born at actual moving blossom sites",
+          "passed": true
+        },
+        {
+          "name": "Descending paths stop at the first actual roof, awning, or pavement",
+          "passed": true
+        },
+        {
+          "name": "Landing samplers agree with independent ray hits on the built mesh",
+          "passed": true
+        },
+        {
+          "name": "One minute of wind preserves finite positions and wall separation",
+          "passed": true
+        },
+        {
+          "name": "The live fall actually adds roof and awning deposits",
+          "passed": true
+        },
+        {
+          "name": "Zero elapsed time keeps both wind and fall still while light can change",
+          "passed": true
+        },
+        {
+          "name": "Near camera petals remain within the readable-size cap",
+          "passed": true
+        }
+      ],
+      "passed": 10,
+      "failed": 0,
+      "metrics": {
+        "initial": {
+          "time": 16.03333333333329,
+          "active": 150,
+          "stats": {
+            "emitted": 262,
+            "landed": 114,
+            "escaped": 7,
+            "wallContacts": 1134,
+            "initialDeposits": {
+              "roof-flat": 1050,
+              "roof-parapet": 100,
+              "chimney-top": 12,
+              "veranda-awning": 260,
+              "veranda-deck": 105,
+              "entry-upper-step": 28,
+              "entry-lower-step": 28
+            },
+            "landings": {
+              "roof-flat": 36,
+              "veranda-deck": 1,
+              "roof-parapet": 7,
+              "pavement": 70
+            },
+            "sourceCount": 1738,
+            "warmupSeconds": 16
+          }
+        },
+        "roots": [
+          {
+            "tree": 0,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 1,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 2,
+            "maxDisplacement": 0
+          },
+          {
+            "tree": 3,
+            "maxDisplacement": 0
+          }
+        ],
+        "motion": [
+          {
+            "tree": 0,
+            "envelopeDiagonal": 0.5649831907980214,
+            "landmark": [
+              -4.4138994707528045,
+              5.43318855184638,
+              5.491212808352461
+            ]
+          },
+          {
+            "tree": 1,
+            "envelopeDiagonal": 0.5571546160346542,
+            "landmark": [
+              -1.8800669835122652,
+              9.815568839047698,
+              -0.5804293794927279
+            ]
+          },
+          {
+            "tree": 2,
+            "envelopeDiagonal": 0.5260916317746919,
+            "landmark": [
+              -1.2976896226336518,
+              11.199783853061808,
+              -2.3407912245770146
+            ]
+          },
+          {
+            "tree": 3,
+            "envelopeDiagonal": 0.5512825151542425,
+            "landmark": [
+              7.289714385755787,
+              10.04767350115476,
+              -0.019479856116100952
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "x": 0,
+            "z": 0,
+            "id": "roof-flat",
+            "height": 8.414999809265137
+          },
+          {
+            "x": 0,
+            "z": 3.02,
+            "id": "veranda-awning",
+            "height": 5.497229354465617
+          },
+          {
+            "x": 0,
+            "z": 4.25,
+            "id": "pavement",
+            "height": 0.474
+          }
+        ],
+        "viewExtents": {
+          "maximumSpanPx": 8.505079613620783,
+          "bench": 8.56007509253926,
+          "close": 8.590973024522377
+        },
+        "restingSupport": {
+          "maxGap": 0.022907378212781992,
+          "minDot": 0.9999999999999997,
+          "count": 1583
+        },
+        "meshSupport": {
+          "samples": 76,
+          "maxDisagreement": 2.6702880795426154e-07
+        },
+        "simulation": {
+          "durationSeconds": 60,
+          "minActive": 139,
+          "maxActive": 185,
+          "checkedReleases": 1130,
+          "bad": 0,
+          "penetrations": 0,
+          "maxDepth": 0,
+          "maxDisplacement": 0.026487025962373068,
+          "landingsBefore": {
+            "roof-flat": 36,
+            "veranda-deck": 1,
+            "roof-parapet": 7,
+            "pavement": 70
+          },
+          "landingsAfter": {
+            "roof-flat": 244,
+            "veranda-deck": 13,
+            "roof-parapet": 58,
+            "pavement": 746,
+            "veranda-awning": 14,
+            "chimney-top": 8
+          },
+          "escaped": 98,
+          "emitted": 980
+        }
+      },
+      "scope": "Production CPU wind sampler, actual THREE geometry/rays, physical contact and release positions. GPU vertex shader and browser frame rate are not executed by this test."
+    }
+  }
+}

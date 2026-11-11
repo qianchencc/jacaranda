@@ -1,0 +1,1914 @@
+{
+  "petal-report-desktop.json": {
+    "sourceSHA256": "ca878ca4d9f62bdf0a61f690570e52430479a606b9fc2103a672b4943b9d1102",
+    "streetSHA256": "9973994022838f253567de66548cb8e066d0c520422fb830143435ce3e90ab37",
+    "mode": "desktop",
+    "viewport": [
+      1440,
+      900
+    ],
+    "tests": [
+      {
+        "name": "Expected initial population and usable finite matrices before first animation frame",
+        "passed": true
+      },
+      {
+        "name": "All matrices remain finite and every center remains outside the building over45s",
+        "passed": true
+      },
+      {
+        "name": "Ground/edge recycling occurs at meaningful boundaries without below-ground retained states",
+        "passed": false,
+        "error": "The expression evaluated to a falsy value:\n\n  assert(metrics.recycling.maximumGroundOvershoot<.04)\n"
+      },
+      {
+        "name": "Pause freezes matrices, ages, wind and particle clock while lighting still updates",
+        "passed": true
+      },
+      {
+        "name": "Resume restarts fall and wind without non-finite matrices",
+        "passed": true
+      },
+      {
+        "name": "Near-camera projected horizontal width respects the18px/10px design cap",
+        "passed": false,
+        "error": "observed 18.74267987849973px vs limit 18px"
+      },
+      {
+        "name": "Overview, bench and door views remain within the same projected width cap",
+        "passed": false,
+        "error": "door: 19.21433263931599px"
+      }
+    ],
+    "passed": 4,
+    "failed": 3,
+    "metrics": {
+      "initial": {
+        "count": 360,
+        "readable": 351,
+        "safe": 351,
+        "maxWidth": 16.07098906524709,
+        "maxHeight": 16.555012463862454,
+        "maxSpan": 16.555012463862454,
+        "minWidth": 0.09249311664029847,
+        "bounds": [
+          480.0104148881008,
+          133.6425286650431,
+          1206.0581550793213,
+          741.4672375932805
+        ],
+        "maxRecord": {
+          "index": 340,
+          "layer": 2,
+          "width": 16.07098906524709,
+          "height": 12.184971062390787,
+          "center": [
+            2.59965443611145,
+            4.136978626251221,
+            5.78400182723999
+          ],
+          "camera": [
+            19.739105251077483,
+            12.100859995409444,
+            26.647792088954606
+          ]
+        }
+      },
+      "views": {
+        "overview": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 355,
+            "mean": 359.0066225165563,
+            "max": 360
+          },
+          "readableCount": {
+            "min": 338,
+            "mean": 349.3576158940397,
+            "max": 358
+          },
+          "clearSceneRegionCount": {
+            "min": 338,
+            "mean": 349.3576158940397,
+            "max": 358
+          },
+          "maximumWidthPx": 16.918765695788238,
+          "maximumHeightPx": 17.06736055480644,
+          "maximumSpanPx": 17.06736055480644,
+          "largest": {
+            "index": 357,
+            "layer": 2,
+            "width": 16.918765695788238,
+            "height": 5.238922047021617,
+            "center": [
+              -1.661370873451233,
+              5.401413917541504,
+              6.148107528686523
+            ],
+            "camera": [
+              19.739105251077483,
+              12.100859995409444,
+              26.647792088954606
+            ]
+          },
+          "first": {
+            "count": 360,
+            "readable": 351,
+            "safe": 351,
+            "maxWidth": 16.07098906524709,
+            "maxHeight": 16.555012463862454,
+            "maxSpan": 16.555012463862454,
+            "minWidth": 0.09249311664029847,
+            "bounds": [
+              480.0104148881008,
+              133.6425286650431,
+              1206.0581550793213,
+              741.4672375932805
+            ],
+            "maxRecord": {
+              "index": 340,
+              "layer": 2,
+              "width": 16.07098906524709,
+              "height": 12.184971062390787,
+              "center": [
+                2.59965443611145,
+                4.136978626251221,
+                5.78400182723999
+              ],
+              "camera": [
+                19.739105251077483,
+                12.100859995409444,
+                26.647792088954606
+              ]
+            }
+          },
+          "last": {
+            "count": 360,
+            "readable": 348,
+            "safe": 348,
+            "maxWidth": 16.86804149297302,
+            "maxHeight": 16.718670297929975,
+            "maxSpan": 16.86804149297302,
+            "minWidth": 0.036226274527848545,
+            "bounds": [
+              485.12671886772614,
+              135.441066852299,
+              1218.86879213978,
+              770.5958732773285
+            ],
+            "maxRecord": {
+              "index": 345,
+              "layer": 2,
+              "width": 16.86804149297302,
+              "height": 6.626991625104893,
+              "center": [
+                -1.4200152158737183,
+                5.631948947906494,
+                5.819136142730713
+              ],
+              "camera": [
+                19.739105251077483,
+                12.100859995409444,
+                26.647792088954606
+              ]
+            }
+          }
+        },
+        "bench": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 285,
+            "mean": 293.21854304635764,
+            "max": 299
+          },
+          "readableCount": {
+            "min": 279,
+            "mean": 287.8344370860927,
+            "max": 296
+          },
+          "clearSceneRegionCount": {
+            "min": 261,
+            "mean": 271.33112582781456,
+            "max": 283
+          },
+          "maximumWidthPx": 18.029070168283397,
+          "maximumHeightPx": 17.55215124282479,
+          "maximumSpanPx": 18.029070168283397,
+          "largest": {
+            "index": 165,
+            "layer": 0,
+            "width": 18.029070168283397,
+            "height": 15.114993080685537,
+            "center": [
+              5.140225887298584,
+              6.227431774139404,
+              1.6931304931640625
+            ],
+            "camera": [
+              7.300000000000001,
+              5.9,
+              15.800000000000002
+            ]
+          },
+          "first": {
+            "count": 292,
+            "readable": 288,
+            "safe": 269,
+            "maxWidth": 18.029070168283397,
+            "maxHeight": 17.126567538550432,
+            "maxSpan": 18.029070168283397,
+            "minWidth": 0.05407791559832731,
+            "bounds": [
+              251.44425487601583,
+              -9.612663125802989,
+              1449.9659324110316,
+              889.9404010158428
+            ],
+            "maxRecord": {
+              "index": 165,
+              "layer": 0,
+              "width": 18.029070168283397,
+              "height": 15.114993080685537,
+              "center": [
+                5.140225887298584,
+                6.227431774139404,
+                1.6931304931640625
+              ],
+              "camera": [
+                7.300000000000001,
+                5.9,
+                15.800000000000002
+              ]
+            }
+          },
+          "last": {
+            "count": 286,
+            "readable": 284,
+            "safe": 271,
+            "maxWidth": 17.444858079693745,
+            "maxHeight": 17.161145321777482,
+            "maxSpan": 17.444858079693745,
+            "minWidth": 0.01819563234442967,
+            "bounds": [
+              235.39149241855287,
+              21.843409506884015,
+              1442.3619241243493,
+              885.4480376493708
+            ],
+            "maxRecord": {
+              "index": 262,
+              "layer": 1,
+              "width": 17.444858079693745,
+              "height": 6.04321450876995,
+              "center": [
+                -4.62118673324585,
+                2.183669090270996,
+                4.744593620300293
+              ],
+              "camera": [
+                7.300000000000004,
+                5.900000000000002,
+                15.800000000000008
+              ]
+            }
+          }
+        },
+        "door": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 273,
+            "mean": 282.1456953642384,
+            "max": 287
+          },
+          "readableCount": {
+            "min": 267,
+            "mean": 277.2582781456954,
+            "max": 284
+          },
+          "clearSceneRegionCount": {
+            "min": 139,
+            "mean": 150.49006622516555,
+            "max": 158
+          },
+          "maximumWidthPx": 19.21433263931599,
+          "maximumHeightPx": 17.554528811680086,
+          "maximumSpanPx": 19.21433263931599,
+          "largest": {
+            "index": 309,
+            "layer": 2,
+            "width": 19.21433263931599,
+            "height": 5.850914808983589,
+            "center": [
+              -4.18055534362793,
+              2.9933021068573,
+              6.07893180847168
+            ],
+            "camera": [
+              10,
+              5.499999999999999,
+              12.2
+            ]
+          },
+          "first": {
+            "count": 276,
+            "readable": 274,
+            "safe": 142,
+            "maxWidth": 18.761963621284565,
+            "maxHeight": 17.469018942233365,
+            "maxSpan": 18.761963621284565,
+            "minWidth": 0.01660202628005436,
+            "bounds": [
+              22.050708495352794,
+              -3.9547467083836496,
+              1450.0329428070731,
+              904.1216260547681
+            ],
+            "maxRecord": {
+              "index": 261,
+              "layer": 1,
+              "width": 18.761963621284565,
+              "height": 9.044579802705243,
+              "center": [
+                -5.184948921203613,
+                1.1667436361312866,
+                5.34602689743042
+              ],
+              "camera": [
+                10,
+                5.499999999999999,
+                12.2
+              ]
+            }
+          },
+          "last": {
+            "count": 273,
+            "readable": 267,
+            "safe": 151,
+            "maxWidth": 18.81349944346738,
+            "maxHeight": 16.866044286965177,
+            "maxSpan": 18.81349944346738,
+            "minWidth": 0.008021647688678968,
+            "bounds": [
+              25.73965428734474,
+              -7.188125353269892,
+              1421.8596362865944,
+              822.106702339306
+            ],
+            "maxRecord": {
+              "index": 356,
+              "layer": 2,
+              "width": 18.81349944346738,
+              "height": 4.77135054514406,
+              "center": [
+                -3.0271549224853516,
+                1.7033872604370117,
+                6.387082576751709
+              ],
+              "camera": [
+                10,
+                5.499999999999999,
+                12.2
+              ]
+            }
+          }
+        }
+      },
+      "stress": {
+        "samples": 101,
+        "onscreenCount": {
+          "min": 83,
+          "mean": 88.2871287128713,
+          "max": 94
+        },
+        "readableCount": {
+          "min": 82,
+          "mean": 87.17821782178218,
+          "max": 93
+        },
+        "clearSceneRegionCount": {
+          "min": 59,
+          "mean": 65.35643564356435,
+          "max": 74
+        },
+        "maximumWidthPx": 18.74267987849973,
+        "maximumHeightPx": 17.652354792166232,
+        "maximumSpanPx": 18.74267987849973,
+        "largest": {
+          "index": 145,
+          "layer": 0,
+          "width": 18.74267987849973,
+          "height": 9.66742830048554,
+          "center": [
+            -4.408523082733154,
+            3.022531032562256,
+            2.475996255874634
+          ],
+          "camera": [
+            4.934776312769371,
+            6.475214998852361,
+            6.661948022238652
+          ]
+        },
+        "first": {
+          "count": 91,
+          "readable": 90,
+          "safe": 67,
+          "maxWidth": 18.441743009443286,
+          "maxHeight": 16.852724970908554,
+          "maxSpan": 18.441743009443286,
+          "minWidth": 0.03422926942744198,
+          "bounds": [
+            8.533981816643372,
+            8.315579178549438,
+            1425.022396888683,
+            909.3665333388567
+          ],
+          "maxRecord": {
+            "index": 159,
+            "layer": 0,
+            "width": 18.441743009443286,
+            "height": 12.828938395193404,
+            "center": [
+              -4.3989667892456055,
+              1.9314461946487427,
+              2.56760311126709
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "last": {
+          "count": 92,
+          "readable": 91,
+          "safe": 72,
+          "maxWidth": 17.676122236305048,
+          "maxHeight": 17.114207447306192,
+          "maxSpan": 17.676122236305048,
+          "minWidth": 0.3201433675293117,
+          "bounds": [
+            -4.032027701175309,
+            -7.649410084931363,
+            1454.5682055527418,
+            862.6445045225659
+          ],
+          "maxRecord": {
+            "index": 134,
+            "layer": 0,
+            "width": 17.676122236305048,
+            "height": 8.90328180198162,
+            "center": [
+              -4.466013431549072,
+              1.3156459331512451,
+              1.2385098934173584
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "cameraDistance": 8.5
+      },
+      "recycling": {
+        "events": 982,
+        "ground": 969,
+        "edge": 13,
+        "both": 0,
+        "minimumAge": 7.553323015378966,
+        "maximumGroundOvershoot": 0.34407912615162445,
+        "unexplained": 0,
+        "minAltitude": 0.07004171823006747,
+        "maxAltitude": 12.437344553920754,
+        "byLayer": [
+          {
+            "layer": 0,
+            "total": 523,
+            "ground": 513,
+            "edge": 10
+          },
+          {
+            "layer": 1,
+            "total": 334,
+            "ground": 331,
+            "edge": 3
+          },
+          {
+            "layer": 2,
+            "total": 125,
+            "ground": 125,
+            "edge": 0
+          }
+        ]
+      },
+      "pause": {
+        "matrixUnchanged": true,
+        "windDelta": 0,
+        "petalClockDelta": 0,
+        "emissive": 0.05965,
+        "expectedEmissive": 0.05965
+      },
+      "groundScatter": [
+        {
+          "name": "",
+          "count": 3127,
+          "finite": true
+        }
+      ]
+    },
+    "scope": "Real THREE geometry, instance transforms, projection, camera and app motion code. Scratch-only renderer/DOM/clock mocks. Screen counts are geometric on-screen bounds with no scene occlusion or pixel-opacity test; readable means projected span>=1.5px. Clear-scene region excludes the main UI zones. No WebGL/GPU/performance claim."
+  },
+  "petal-report-phone.json": {
+    "sourceSHA256": "ca878ca4d9f62bdf0a61f690570e52430479a606b9fc2103a672b4943b9d1102",
+    "streetSHA256": "9973994022838f253567de66548cb8e066d0c520422fb830143435ce3e90ab37",
+    "mode": "phone",
+    "viewport": [
+      390,
+      844
+    ],
+    "tests": [
+      {
+        "name": "Expected initial population and usable finite matrices before first animation frame",
+        "passed": true
+      },
+      {
+        "name": "All matrices remain finite and every center remains outside the building over45s",
+        "passed": true
+      },
+      {
+        "name": "Ground/edge recycling occurs at meaningful boundaries without below-ground retained states",
+        "passed": false,
+        "error": "The expression evaluated to a falsy value:\n\n  assert(metrics.recycling.maximumGroundOvershoot<.04)\n"
+      },
+      {
+        "name": "Pause freezes matrices, ages, wind and particle clock while lighting still updates",
+        "passed": true
+      },
+      {
+        "name": "Resume restarts fall and wind without non-finite matrices",
+        "passed": true
+      },
+      {
+        "name": "Near-camera projected horizontal width respects the18px/10px design cap",
+        "passed": true
+      },
+      {
+        "name": "Overview, bench and door views remain within the same projected width cap",
+        "passed": true
+      }
+    ],
+    "passed": 6,
+    "failed": 1,
+    "metrics": {
+      "initial": {
+        "count": 280,
+        "readable": 267,
+        "safe": 267,
+        "maxWidth": 5.212264182608479,
+        "maxHeight": 6.382580613205448,
+        "maxSpan": 6.382580613205448,
+        "minWidth": 0.014811791143579,
+        "bounds": [
+          52.6465209260309,
+          265.0459880622988,
+          329.63151590459137,
+          501.0692508351047
+        ],
+        "maxRecord": {
+          "index": 266,
+          "layer": 2,
+          "width": 5.212264182608479,
+          "height": 4.937034251387843,
+          "center": [
+            -1.0270510911941528,
+            1.9185714721679688,
+            6.230541229248047
+          ],
+          "camera": [
+            47.025515451096354,
+            22.46969587141662,
+            63.48444585898008
+          ]
+        }
+      },
+      "views": {
+        "overview": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 276,
+            "mean": 278.8079470198675,
+            "max": 280
+          },
+          "readableCount": {
+            "min": 255,
+            "mean": 265.3907284768212,
+            "max": 275
+          },
+          "clearSceneRegionCount": {
+            "min": 255,
+            "mean": 265.3907284768212,
+            "max": 275
+          },
+          "maximumWidthPx": 6.292549032269363,
+          "maximumHeightPx": 6.524513807207825,
+          "maximumSpanPx": 6.524513807207825,
+          "largest": {
+            "index": 255,
+            "layer": 2,
+            "width": 6.292549032269363,
+            "height": 1.7739337473163914,
+            "center": [
+              1.2969322204589844,
+              0.6088842153549194,
+              6.216159820556641
+            ],
+            "camera": [
+              47.025515451096354,
+              22.46969587141662,
+              63.48444585898008
+            ]
+          },
+          "first": {
+            "count": 280,
+            "readable": 267,
+            "safe": 267,
+            "maxWidth": 5.212264182608479,
+            "maxHeight": 6.382580613205448,
+            "maxSpan": 6.382580613205448,
+            "minWidth": 0.014811791143579,
+            "bounds": [
+              52.6465209260309,
+              265.0459880622988,
+              329.63151590459137,
+              501.0692508351047
+            ],
+            "maxRecord": {
+              "index": 266,
+              "layer": 2,
+              "width": 5.212264182608479,
+              "height": 4.937034251387843,
+              "center": [
+                -1.0270510911941528,
+                1.9185714721679688,
+                6.230541229248047
+              ],
+              "camera": [
+                47.025515451096354,
+                22.46969587141662,
+                63.48444585898008
+              ]
+            }
+          },
+          "last": {
+            "count": 280,
+            "readable": 269,
+            "safe": 269,
+            "maxWidth": 6.037495869892908,
+            "maxHeight": 6.312873347963944,
+            "maxSpan": 6.312873347963944,
+            "minWidth": 0.051074829651327036,
+            "bounds": [
+              58.389697979902,
+              284.1097018363872,
+              337.1345697911443,
+              502.5955995426574
+            ],
+            "maxRecord": {
+              "index": 239,
+              "layer": 2,
+              "width": 6.037495869892908,
+              "height": 4.284392364162898,
+              "center": [
+                -5.230393886566162,
+                2.6686649322509766,
+                5.425675868988037
+              ],
+              "camera": [
+                47.025515451096354,
+                22.46969587141662,
+                63.48444585898008
+              ]
+            }
+          }
+        },
+        "bench": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 79,
+            "mean": 89.01324503311258,
+            "max": 102
+          },
+          "readableCount": {
+            "min": 78,
+            "mean": 87.06622516556291,
+            "max": 98
+          },
+          "clearSceneRegionCount": {
+            "min": 35,
+            "mean": 41.40397350993378,
+            "max": 49
+          },
+          "maximumWidthPx": 9.413057289650169,
+          "maximumHeightPx": 9.636264858082956,
+          "maximumSpanPx": 9.636264858082956,
+          "largest": {
+            "index": 116,
+            "layer": 0,
+            "width": 9.413057289650169,
+            "height": 5.375350158248182,
+            "center": [
+              -0.21537481248378754,
+              3.3972153663635254,
+              -3.7661690711975098
+            ],
+            "camera": [
+              9.027,
+              6.604,
+              18.814000000000004
+            ]
+          },
+          "first": {
+            "count": 87,
+            "readable": 85,
+            "safe": 36,
+            "maxWidth": 9.38083431298054,
+            "maxHeight": 9.308911967903668,
+            "maxSpan": 9.38083431298054,
+            "minWidth": 0.5793591994573433,
+            "bounds": [
+              -7.2481085612932,
+              -5.666945206258051,
+              395.6939733905779,
+              715.784045158077
+            ],
+            "maxRecord": {
+              "index": 9,
+              "layer": 0,
+              "width": 9.38083431298054,
+              "height": 4.224535283599494,
+              "center": [
+                -0.6094191074371338,
+                1.928434133529663,
+                -4.319278717041016
+              ],
+              "camera": [
+                9.027,
+                6.604,
+                18.814000000000004
+              ]
+            }
+          },
+          "last": {
+            "count": 85,
+            "readable": 82,
+            "safe": 38,
+            "maxWidth": 9.178616427613377,
+            "maxHeight": 9.491306420425587,
+            "maxSpan": 9.491306420425587,
+            "minWidth": 0.020797500947807634,
+            "bounds": [
+              -5.6521485317458,
+              23.163885676283382,
+              384.1902733129423,
+              679.7204534020532
+            ],
+            "maxRecord": {
+              "index": 258,
+              "layer": 2,
+              "width": 9.178616427613377,
+              "height": 6.6648545893069695,
+              "center": [
+                1.2808802127838135,
+                0.4204443097114563,
+                5.859590530395508
+              ],
+              "camera": [
+                9.027,
+                6.604,
+                18.814000000000004
+              ]
+            }
+          }
+        },
+        "door": {
+          "samples": 151,
+          "onscreenCount": {
+            "min": 33,
+            "mean": 37.47019867549669,
+            "max": 42
+          },
+          "readableCount": {
+            "min": 32,
+            "mean": 36.81456953642384,
+            "max": 41
+          },
+          "clearSceneRegionCount": {
+            "min": 10,
+            "mean": 13.33774834437086,
+            "max": 19
+          },
+          "maximumWidthPx": 9.477665271090611,
+          "maximumHeightPx": 9.684829838582488,
+          "maximumSpanPx": 9.684829838582488,
+          "largest": {
+            "index": 24,
+            "layer": 0,
+            "width": 9.477665271090611,
+            "height": 7.901801843983947,
+            "center": [
+              -4.091489315032959,
+              2.4397647380828857,
+              -1.0627200603485107
+            ],
+            "camera": [
+              11.738,
+              6.248000000000001,
+              14.454999999999998
+            ]
+          },
+          "first": {
+            "count": 34,
+            "readable": 34,
+            "safe": 11,
+            "maxWidth": 8.857490170063599,
+            "maxHeight": 9.435881857000538,
+            "maxSpan": 9.435881857000538,
+            "minWidth": 1.4124043560750579,
+            "bounds": [
+              11.53216981476217,
+              3.088507046498841,
+              395.2502105905454,
+              739.4219222622551
+            ],
+            "maxRecord": {
+              "index": 126,
+              "layer": 0,
+              "width": 8.857490170063599,
+              "height": 6.110674974148566,
+              "center": [
+                -5.236615180969238,
+                3.1307849884033203,
+                -3.930739164352417
+              ],
+              "camera": [
+                11.738,
+                6.248000000000001,
+                14.454999999999998
+              ]
+            }
+          },
+          "last": {
+            "count": 37,
+            "readable": 36,
+            "safe": 11,
+            "maxWidth": 9.26527363098186,
+            "maxHeight": 9.379252889088548,
+            "maxSpan": 9.379252889088548,
+            "minWidth": 0.00638988265103535,
+            "bounds": [
+              -1.5258085877242755,
+              -3.951784130709357,
+              388.3404572265246,
+              641.9544265941264
+            ],
+            "maxRecord": {
+              "index": 37,
+              "layer": 0,
+              "width": 9.26527363098186,
+              "height": 5.830749753583802,
+              "center": [
+                -5.5716705322265625,
+                1.4837509393692017,
+                -3.4827117919921875
+              ],
+              "camera": [
+                11.738,
+                6.248000000000001,
+                14.454999999999998
+              ]
+            }
+          }
+        }
+      },
+      "stress": {
+        "samples": 101,
+        "onscreenCount": {
+          "min": 7,
+          "mean": 8.207920792079207,
+          "max": 10
+        },
+        "readableCount": {
+          "min": 7,
+          "mean": 8.029702970297029,
+          "max": 10
+        },
+        "clearSceneRegionCount": {
+          "min": 3,
+          "mean": 3.881188118811881,
+          "max": 5
+        },
+        "maximumWidthPx": 9.402014813586707,
+        "maximumHeightPx": 9.55671003271204,
+        "maximumSpanPx": 9.55671003271204,
+        "largest": {
+          "index": 37,
+          "layer": 0,
+          "width": 9.402014813586707,
+          "height": 7.040129166612587,
+          "center": [
+            -5.2894816398620605,
+            1.1289687156677246,
+            -3.55062198638916
+          ],
+          "camera": [
+            4.934776312769371,
+            6.475214998852361,
+            6.661948022238652
+          ]
+        },
+        "first": {
+          "count": 9,
+          "readable": 7,
+          "safe": 3,
+          "maxWidth": 9.028333521291373,
+          "maxHeight": 8.550256330852797,
+          "maxSpan": 9.028333521291373,
+          "minWidth": 1.252031647912844,
+          "bounds": [
+            2.620882982581954,
+            52.432341687127355,
+            281.47853860780975,
+            687.4518877204634
+          ],
+          "maxRecord": {
+            "index": 35,
+            "layer": 0,
+            "width": 9.028333521291373,
+            "height": 2.3393419282736545,
+            "center": [
+              -5.264439105987549,
+              4.704962253570557,
+              -5.101497173309326
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "last": {
+          "count": 10,
+          "readable": 10,
+          "safe": 4,
+          "maxWidth": 8.286974949738692,
+          "maxHeight": 9.457121333598351,
+          "maxSpan": 9.457121333598351,
+          "minWidth": 2.36345711912179,
+          "bounds": [
+            29.114483733606527,
+            64.55582533635251,
+            385.8332501470691,
+            607.3011527545402
+          ],
+          "maxRecord": {
+            "index": 160,
+            "layer": 0,
+            "width": 8.286974949738692,
+            "height": 9.40104865641149,
+            "center": [
+              -3.046172857284546,
+              6.0749311447143555,
+              -4.4919610023498535
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "cameraDistance": 8.5
+      },
+      "recycling": {
+        "events": 770,
+        "ground": 757,
+        "edge": 13,
+        "both": 0,
+        "minimumAge": 7.583333333333312,
+        "maximumGroundOvershoot": 0.2056217530689246,
+        "unexplained": 0,
+        "minAltitude": 0.07005398588112445,
+        "maxAltitude": 12.35976228177055,
+        "byLayer": [
+          {
+            "layer": 0,
+            "total": 407,
+            "ground": 398,
+            "edge": 9
+          },
+          {
+            "layer": 1,
+            "total": 258,
+            "ground": 254,
+            "edge": 4
+          },
+          {
+            "layer": 2,
+            "total": 105,
+            "ground": 105,
+            "edge": 0
+          }
+        ]
+      },
+      "pause": {
+        "matrixUnchanged": true,
+        "windDelta": 0,
+        "petalClockDelta": 0,
+        "emissive": 0.05965,
+        "expectedEmissive": 0.05965
+      },
+      "groundScatter": [
+        {
+          "name": "",
+          "count": 3127,
+          "finite": true
+        }
+      ]
+    },
+    "scope": "Real THREE geometry, instance transforms, projection, camera and app motion code. Scratch-only renderer/DOM/clock mocks. Screen counts are geometric on-screen bounds with no scene occlusion or pixel-opacity test; readable means projected span>=1.5px. Clear-scene region excludes the main UI zones. No WebGL/GPU/performance claim."
+  },
+  "petal-report-fallback.json": {
+    "sourceSHA256": "ca878ca4d9f62bdf0a61f690570e52430479a606b9fc2103a672b4943b9d1102",
+    "streetSHA256": "9973994022838f253567de66548cb8e066d0c520422fb830143435ce3e90ab37",
+    "mode": "renderer-failure",
+    "viewport": [
+      1440,
+      900
+    ],
+    "tests": [
+      {
+        "name": "Expected initial population and usable finite matrices before first animation frame",
+        "passed": true
+      },
+      {
+        "name": "Renderer failure still initializes all petal state and matrices",
+        "passed": true
+      }
+    ],
+    "passed": 2,
+    "failed": 0,
+    "metrics": {
+      "initial": {
+        "count": 360,
+        "readable": 351,
+        "safe": 351,
+        "maxWidth": 16.07098906524709,
+        "maxHeight": 16.555012463862454,
+        "maxSpan": 16.555012463862454,
+        "minWidth": 0.09249311664029847,
+        "bounds": [
+          480.0104148881008,
+          133.6425286650431,
+          1206.0581550793213,
+          741.4672375932805
+        ],
+        "maxRecord": {
+          "index": 340,
+          "layer": 2,
+          "width": 16.07098906524709,
+          "height": 12.184971062390787,
+          "center": [
+            2.59965443611145,
+            4.136978626251221,
+            5.78400182723999
+          ],
+          "camera": [
+            19.739105251077483,
+            12.100859995409444,
+            26.647792088954606
+          ]
+        }
+      },
+      "views": {},
+      "stress": null,
+      "recycling": null,
+      "pause": null,
+      "groundScatter": [
+        {
+          "name": "",
+          "count": 3127,
+          "finite": true
+        }
+      ]
+    },
+    "scope": "Real THREE geometry, instance transforms, projection, camera and app motion code. Scratch-only renderer/DOM/clock mocks. Screen counts are geometric on-screen bounds with no scene occlusion or pixel-opacity test; readable means projected span>=1.5px. Clear-scene region excludes the main UI zones. No WebGL/GPU/performance claim."
+  },
+  "petal-report-cap-desktop.json": {
+    "sourceSHA256": "fe6f69abb8027de29d3e220be0d2d2a9dbaa95eb3761c6a6fee30886adc062f1",
+    "streetSHA256": "9973994022838f253567de66548cb8e066d0c520422fb830143435ce3e90ab37",
+    "mode": "desktop",
+    "viewport": [
+      1440,
+      900
+    ],
+    "tests": [
+      {
+        "name": "Expected initial population and usable finite matrices before first animation frame",
+        "passed": true
+      },
+      {
+        "name": "Updated perspective cap keeps bench and door geometry within18px/10px",
+        "passed": true
+      },
+      {
+        "name": "Updated perspective cap keeps minimum-distance geometry within18px/10px",
+        "passed": true
+      },
+      {
+        "name": "Any larger ground contact is explained by the actual curb height step",
+        "passed": true
+      }
+    ],
+    "passed": 4,
+    "failed": 0,
+    "metrics": {
+      "initial": {
+        "count": 360,
+        "readable": 351,
+        "safe": 351,
+        "maxWidth": 15.771903311510073,
+        "maxHeight": 15.947379474974582,
+        "maxSpan": 15.947379474974582,
+        "minWidth": 0.09249311664029847,
+        "bounds": [
+          480.0104148881008,
+          133.6425286650431,
+          1206.0581550793213,
+          741.4672375932805
+        ],
+        "maxRecord": {
+          "index": 353,
+          "layer": 2,
+          "width": 15.771903311510073,
+          "height": 10.240229548305479,
+          "center": [
+            -3.887000322341919,
+            2.991363763809204,
+            5.884591102600098
+          ],
+          "camera": [
+            19.739105251077483,
+            12.100859995409444,
+            26.647792088954606
+          ]
+        }
+      },
+      "views": {
+        "bench": {
+          "samples": 161,
+          "onscreenCount": {
+            "min": 276,
+            "mean": 281.96894409937886,
+            "max": 288
+          },
+          "readableCount": {
+            "min": 269,
+            "mean": 276.24844720496895,
+            "max": 285
+          },
+          "clearSceneRegionCount": {
+            "min": 250,
+            "mean": 258.888198757764,
+            "max": 269
+          },
+          "maximumWidthPx": 16.469948981060725,
+          "maximumHeightPx": 16.40342777531157,
+          "maximumSpanPx": 16.469948981060725,
+          "largest": {
+            "index": 251,
+            "layer": 1,
+            "width": 16.469948981060725,
+            "height": 3.9101633293905707,
+            "center": [
+              -3.18648362159729,
+              4.553049087524414,
+              4.360578536987305
+            ],
+            "camera": [
+              7.300000000000004,
+              5.900000000000002,
+              15.800000000000008
+            ]
+          },
+          "first": {
+            "count": 285,
+            "readable": 283,
+            "safe": 268,
+            "maxWidth": 16.170258949945094,
+            "maxHeight": 16.146787295270542,
+            "maxSpan": 16.170258949945094,
+            "minWidth": 0.5600211575704179,
+            "bounds": [
+              201.38460363325174,
+              -0.31781356487654566,
+              1445.7455173006774,
+              872.3828041214045
+            ],
+            "maxRecord": {
+              "index": 304,
+              "layer": 1,
+              "width": 16.170258949945094,
+              "height": 4.930067014779411,
+              "center": [
+                -3.4307639598846436,
+                3.15706729888916,
+                4.616557598114014
+              ],
+              "camera": [
+                7.300000000000001,
+                5.9,
+                15.800000000000002
+              ]
+            }
+          },
+          "last": {
+            "count": 286,
+            "readable": 276,
+            "safe": 261,
+            "maxWidth": 16.233376915743747,
+            "maxHeight": 16.086234567199767,
+            "maxSpan": 16.233376915743747,
+            "minWidth": 0.05248019664009007,
+            "bounds": [
+              201.71693345094843,
+              -3.3299711217653294,
+              1455.4139353650849,
+              818.6270977085602
+            ],
+            "maxRecord": {
+              "index": 7,
+              "layer": 0,
+              "width": 16.233376915743747,
+              "height": 4.649973563935603,
+              "center": [
+                3.5865983963012695,
+                6.9453253746032715,
+                -3.6280055046081543
+              ],
+              "camera": [
+                7.300000000000004,
+                5.900000000000002,
+                15.800000000000008
+              ]
+            }
+          }
+        },
+        "door": {
+          "samples": 161,
+          "onscreenCount": {
+            "min": 266,
+            "mean": 279.8447204968944,
+            "max": 291
+          },
+          "readableCount": {
+            "min": 256,
+            "mean": 275,
+            "max": 288
+          },
+          "clearSceneRegionCount": {
+            "min": 141,
+            "mean": 150.0496894409938,
+            "max": 160
+          },
+          "maximumWidthPx": 16.453569467540206,
+          "maximumHeightPx": 16.32485538295566,
+          "maximumSpanPx": 16.453569467540206,
+          "largest": {
+            "index": 251,
+            "layer": 1,
+            "width": 16.453569467540206,
+            "height": 4.797779020246367,
+            "center": [
+              -2.3115501403808594,
+              4.121211528778076,
+              4.586960792541504
+            ],
+            "camera": [
+              10,
+              5.499999999999999,
+              12.2
+            ]
+          },
+          "first": {
+            "count": 267,
+            "readable": 256,
+            "safe": 141,
+            "maxWidth": 16.250232265485238,
+            "maxHeight": 16.088858736299244,
+            "maxSpan": 16.250232265485238,
+            "minWidth": 0.05539266503467388,
+            "bounds": [
+              -4.190382270866273,
+              -13.063704553064536,
+              1446.9697646542509,
+              772.1973449238683
+            ],
+            "maxRecord": {
+              "index": 192,
+              "layer": 0,
+              "width": 16.250232265485238,
+              "height": 8.845744766621237,
+              "center": [
+                3.8650131225585938,
+                0.9502331018447876,
+                -4.382955074310303
+              ],
+              "camera": [
+                10,
+                5.499999999999999,
+                12.2
+              ]
+            }
+          },
+          "last": {
+            "count": 279,
+            "readable": 275,
+            "safe": 149,
+            "maxWidth": 16.358493182449934,
+            "maxHeight": 16.281671376355757,
+            "maxSpan": 16.358493182449934,
+            "minWidth": 0.0680667463094835,
+            "bounds": [
+              -9.404158316918512,
+              -4.495328314712688,
+              1453.8615920224554,
+              812.6482947562154
+            ],
+            "maxRecord": {
+              "index": 335,
+              "layer": 2,
+              "width": 16.358493182449934,
+              "height": 12.245761963691393,
+              "center": [
+                2.5683634281158447,
+                0.8502964973449707,
+                6.120497226715088
+              ],
+              "camera": [
+                10,
+                5.499999999999999,
+                12.2
+              ]
+            }
+          }
+        }
+      },
+      "stress": {
+        "samples": 101,
+        "onscreenCount": {
+          "min": 92,
+          "mean": 97.1980198019802,
+          "max": 102
+        },
+        "readableCount": {
+          "min": 92,
+          "mean": 96.14851485148515,
+          "max": 102
+        },
+        "clearSceneRegionCount": {
+          "min": 76,
+          "mean": 80.74257425742574,
+          "max": 85
+        },
+        "maximumWidthPx": 16.328916729111143,
+        "maximumHeightPx": 16.211726605613464,
+        "maximumSpanPx": 16.328916729111143,
+        "largest": {
+          "index": 11,
+          "layer": 0,
+          "width": 16.328916729111143,
+          "height": 9.498297371810146,
+          "center": [
+            0.167328342795372,
+            7.044435024261475,
+            -5.36737060546875
+          ],
+          "camera": [
+            4.934776312769371,
+            6.475214998852361,
+            6.661948022238652
+          ]
+        },
+        "first": {
+          "count": 92,
+          "readable": 92,
+          "safe": 81,
+          "maxWidth": 16.14883569162828,
+          "maxHeight": 16.15688789621305,
+          "maxSpan": 16.15688789621305,
+          "minWidth": 1.9896991865900873,
+          "bounds": [
+            -1.7567594418837729,
+            29.708896901729364,
+            1437.9294492783692,
+            890.6169821994761
+          ],
+          "maxRecord": {
+            "index": 133,
+            "layer": 0,
+            "width": 16.14883569162828,
+            "height": 13.141450072109706,
+            "center": [
+              -4.219052791595459,
+              2.653179407119751,
+              -2.0774638652801514
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "last": {
+          "count": 98,
+          "readable": 96,
+          "safe": 79,
+          "maxWidth": 16.062764202465132,
+          "maxHeight": 15.68016628481945,
+          "maxSpan": 16.062764202465132,
+          "minWidth": 0.11950888193842957,
+          "bounds": [
+            44.79131928915806,
+            -5.184401879050126,
+            1424.7048380696908,
+            891.7243114143384
+          ],
+          "maxRecord": {
+            "index": 35,
+            "layer": 0,
+            "width": 16.062764202465132,
+            "height": 4.28791935715401,
+            "center": [
+              -4.279533863067627,
+              1.486446738243103,
+              0.0032227712217718363
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "cameraDistance": 8.5
+      },
+      "recycling": {
+        "events": 462,
+        "ground": 454,
+        "largeStepContacts": 2,
+        "stepContacts": [
+          {
+            "time": 2.449999999999996,
+            "layer": 1,
+            "age": 13.892498512590745,
+            "x": -2.783165822113226,
+            "y": 0.2603671284129907,
+            "z": 5.469910989977781,
+            "floor": 0.49,
+            "ground": true,
+            "edge": false,
+            "curbDistance": 8.901002221861631e-05
+          },
+          {
+            "time": 4.666666666666655,
+            "layer": 2,
+            "age": 12.066618242602992,
+            "x": 0.9401037483700422,
+            "y": 0.14592087384837554,
+            "z": 5.4684627414019795,
+            "floor": 0.49,
+            "ground": true,
+            "edge": false,
+            "curbDistance": 0.0015372585980202302
+          }
+        ]
+      },
+      "pause": null,
+      "groundScatter": [
+        {
+          "name": "",
+          "count": 3127,
+          "finite": true
+        }
+      ]
+    },
+    "scope": "Real THREE geometry, instance transforms, projection, camera and app motion code. Scratch-only renderer/DOM/clock mocks. Screen counts are geometric on-screen bounds with no scene occlusion or pixel-opacity test; readable means projected span>=1.5px. Clear-scene region excludes the main UI zones. No WebGL/GPU/performance claim."
+  },
+  "petal-report-cap-phone.json": {
+    "sourceSHA256": "fe6f69abb8027de29d3e220be0d2d2a9dbaa95eb3761c6a6fee30886adc062f1",
+    "streetSHA256": "9973994022838f253567de66548cb8e066d0c520422fb830143435ce3e90ab37",
+    "mode": "phone",
+    "viewport": [
+      390,
+      844
+    ],
+    "tests": [
+      {
+        "name": "Expected initial population and usable finite matrices before first animation frame",
+        "passed": true
+      },
+      {
+        "name": "Updated perspective cap keeps bench and door geometry within18px/10px",
+        "passed": true
+      },
+      {
+        "name": "Updated perspective cap keeps minimum-distance geometry within18px/10px",
+        "passed": true
+      },
+      {
+        "name": "Any larger ground contact is explained by the actual curb height step",
+        "passed": true
+      }
+    ],
+    "passed": 4,
+    "failed": 0,
+    "metrics": {
+      "initial": {
+        "count": 280,
+        "readable": 267,
+        "safe": 267,
+        "maxWidth": 5.212264182608479,
+        "maxHeight": 6.382580613205448,
+        "maxSpan": 6.382580613205448,
+        "minWidth": 0.014811791143579,
+        "bounds": [
+          52.6465209260309,
+          265.0459880622988,
+          329.63151590459137,
+          501.0692508351047
+        ],
+        "maxRecord": {
+          "index": 266,
+          "layer": 2,
+          "width": 5.212264182608479,
+          "height": 4.937034251387843,
+          "center": [
+            -1.0270510911941528,
+            1.9185714721679688,
+            6.230541229248047
+          ],
+          "camera": [
+            47.025515451096354,
+            22.46969587141662,
+            63.48444585898008
+          ]
+        }
+      },
+      "views": {
+        "bench": {
+          "samples": 161,
+          "onscreenCount": {
+            "min": 78,
+            "mean": 83.90683229813665,
+            "max": 90
+          },
+          "readableCount": {
+            "min": 77,
+            "mean": 81.9192546583851,
+            "max": 89
+          },
+          "clearSceneRegionCount": {
+            "min": 30,
+            "mean": 35.47204968944099,
+            "max": 46
+          },
+          "maximumWidthPx": 9.070292326506177,
+          "maximumHeightPx": 9.098055904033572,
+          "maximumSpanPx": 9.098055904033572,
+          "largest": {
+            "index": 264,
+            "layer": 2,
+            "width": 9.070292326506177,
+            "height": 6.062070465448926,
+            "center": [
+              0.765128493309021,
+              3.6138291358947754,
+              5.956899166107178
+            ],
+            "camera": [
+              9.027,
+              6.604,
+              18.814000000000004
+            ]
+          },
+          "first": {
+            "count": 90,
+            "readable": 88,
+            "safe": 46,
+            "maxWidth": 9.013076787307327,
+            "maxHeight": 8.944832185252835,
+            "maxSpan": 9.013076787307327,
+            "minWidth": 0.45486200392725884,
+            "bounds": [
+              -4.4398325680644914,
+              8.83767704099346,
+              391.4932755183131,
+              654.7044690345638
+            ],
+            "maxRecord": {
+              "index": 35,
+              "layer": 0,
+              "width": 9.013076787307327,
+              "height": 7.0392871665342795,
+              "center": [
+                -4.659058570861816,
+                2.3277130126953125,
+                -1.8576099872589111
+              ],
+              "camera": [
+                9.027,
+                6.604,
+                18.814000000000004
+              ]
+            }
+          },
+          "last": {
+            "count": 84,
+            "readable": 80,
+            "safe": 32,
+            "maxWidth": 8.736379763751938,
+            "maxHeight": 9.047029006434741,
+            "maxSpan": 9.047029006434741,
+            "minWidth": 0.07497102639121067,
+            "bounds": [
+              -1.0733619675500516,
+              -3.7582108332659643,
+              391.96823348514494,
+              665.9549169002499
+            ],
+            "maxRecord": {
+              "index": 7,
+              "layer": 0,
+              "width": 8.736379763751938,
+              "height": 3.9611424265402775,
+              "center": [
+                -5.388891696929932,
+                4.755527973175049,
+                -0.5859656929969788
+              ],
+              "camera": [
+                9.027,
+                6.604,
+                18.814000000000004
+              ]
+            }
+          }
+        },
+        "door": {
+          "samples": 161,
+          "onscreenCount": {
+            "min": 41,
+            "mean": 45.96894409937888,
+            "max": 55
+          },
+          "readableCount": {
+            "min": 41,
+            "mean": 45.39751552795031,
+            "max": 55
+          },
+          "clearSceneRegionCount": {
+            "min": 7,
+            "mean": 13.236024844720497,
+            "max": 18
+          },
+          "maximumWidthPx": 9.094809520234904,
+          "maximumHeightPx": 9.105860709903482,
+          "maximumSpanPx": 9.105860709903482,
+          "largest": {
+            "index": 59,
+            "layer": 0,
+            "width": 9.094809520234904,
+            "height": 2.6325597091769453,
+            "center": [
+              -5.200592517852783,
+              3.3978824615478516,
+              -2.638317584991455
+            ],
+            "camera": [
+              11.738,
+              6.248000000000001,
+              14.454999999999998
+            ]
+          },
+          "first": {
+            "count": 44,
+            "readable": 43,
+            "safe": 7,
+            "maxWidth": 8.885099786587034,
+            "maxHeight": 8.9561744002648,
+            "maxSpan": 8.9561744002648,
+            "minWidth": 0.2724975070489535,
+            "bounds": [
+              -2.374009347302144,
+              -1.8884526293454518,
+              387.50487393617755,
+              626.2690283989562
+            ],
+            "maxRecord": {
+              "index": 164,
+              "layer": 0,
+              "width": 8.885099786587034,
+              "height": 6.707658050321783,
+              "center": [
+                -0.0821886882185936,
+                3.871009111404419,
+                -5.074406147003174
+              ],
+              "camera": [
+                11.738,
+                6.248000000000001,
+                14.454999999999998
+              ]
+            }
+          },
+          "last": {
+            "count": 55,
+            "readable": 55,
+            "safe": 18,
+            "maxWidth": 8.75863578055612,
+            "maxHeight": 9.01237116028949,
+            "maxSpan": 9.01237116028949,
+            "minWidth": 1.665580433033817,
+            "bounds": [
+              -6.498076235029959,
+              5.836993395091238,
+              392.6781655648577,
+              698.1310257338357
+            ],
+            "maxRecord": {
+              "index": 138,
+              "layer": 0,
+              "width": 8.75863578055612,
+              "height": 4.941885059807859,
+              "center": [
+                -4.452340126037598,
+                5.5917768478393555,
+                -2.7740426063537598
+              ],
+              "camera": [
+                11.738,
+                6.248000000000001,
+                14.454999999999998
+              ]
+            }
+          }
+        }
+      },
+      "stress": {
+        "samples": 101,
+        "onscreenCount": {
+          "min": 17,
+          "mean": 20.712871287128714,
+          "max": 26
+        },
+        "readableCount": {
+          "min": 16,
+          "mean": 20.326732673267326,
+          "max": 25
+        },
+        "clearSceneRegionCount": {
+          "min": 7,
+          "mean": 9.415841584158416,
+          "max": 12
+        },
+        "maximumWidthPx": 9.081918594000506,
+        "maximumHeightPx": 8.995246712423153,
+        "maximumSpanPx": 9.081918594000506,
+        "largest": {
+          "index": 97,
+          "layer": 0,
+          "width": 9.081918594000506,
+          "height": 6.182265111738957,
+          "center": [
+            -4.748196125030518,
+            2.249756336212158,
+            -3.6601064205169678
+          ],
+          "camera": [
+            4.934776312769371,
+            6.475214998852361,
+            6.661948022238652
+          ]
+        },
+        "first": {
+          "count": 23,
+          "readable": 23,
+          "safe": 10,
+          "maxWidth": 8.64049244739773,
+          "maxHeight": 8.599701887411584,
+          "maxSpan": 8.64049244739773,
+          "minWidth": 4.014122546640365,
+          "bounds": [
+            6.972888380063191,
+            4.157933621270853,
+            383.74362798761246,
+            662.7312764403649
+          ],
+          "maxRecord": {
+            "index": 48,
+            "layer": 0,
+            "width": 8.64049244739773,
+            "height": 4.310270115317849,
+            "center": [
+              -5.387528419494629,
+              1.234395146369934,
+              -4.033720970153809
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "last": {
+          "count": 19,
+          "readable": 19,
+          "safe": 10,
+          "maxWidth": 8.859084666471524,
+          "maxHeight": 8.50278565861521,
+          "maxSpan": 8.859084666471524,
+          "minWidth": 1.7179122915942457,
+          "bounds": [
+            5.546423403250525,
+            3.2538720496089444,
+            384.06233980118736,
+            649.4710558451185
+          ],
+          "maxRecord": {
+            "index": 133,
+            "layer": 0,
+            "width": 8.859084666471524,
+            "height": 3.3984859232866143,
+            "center": [
+              -4.899113655090332,
+              3.8734333515167236,
+              -4.033382892608643
+            ],
+            "camera": [
+              4.934776312769371,
+              6.475214998852361,
+              6.661948022238652
+            ]
+          }
+        },
+        "cameraDistance": 8.5
+      },
+      "recycling": {
+        "events": 350,
+        "ground": 344,
+        "largeStepContacts": 2,
+        "stepContacts": [
+          {
+            "time": 9.333333333333377,
+            "layer": 1,
+            "age": 12.980656678114315,
+            "x": -2.123353059014673,
+            "y": 0.2843782469310754,
+            "z": 5.466936287440269,
+            "floor": 0.49,
+            "ground": true,
+            "edge": false,
+            "curbDistance": 0.0030637125597303694
+          },
+          {
+            "time": 14.950000000000323,
+            "layer": 0,
+            "age": 13.616666666666923,
+            "x": -5.6685543201231035,
+            "y": 0.4464724463485726,
+            "z": 5.468605178903642,
+            "floor": 0.49,
+            "ground": true,
+            "edge": false,
+            "curbDistance": 0.001394821096357468
+          }
+        ]
+      },
+      "pause": null,
+      "groundScatter": [
+        {
+          "name": "",
+          "count": 3127,
+          "finite": true
+        }
+      ]
+    },
+    "scope": "Real THREE geometry, instance transforms, projection, camera and app motion code. Scratch-only renderer/DOM/clock mocks. Screen counts are geometric on-screen bounds with no scene occlusion or pixel-opacity test; readable means projected span>=1.5px. Clear-scene region excludes the main UI zones. No WebGL/GPU/performance claim."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "jacaranda-days",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive Sydney spring miniature. Self-contained static assets; Three.js r170."
+}

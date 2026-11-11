@@ -1,0 +1,21 @@
+{
+  "sourceSHA256": "20a92d9c11dff95fa74e147bc75897d62fd4120bfe69bd113ec3b0d34f5c6541",
+  "mode": "no-webgl",
+  "tests": [
+    {
+      "name": "No-WebGL branch retains fallback UI without throwing",
+      "passed": true
+    },
+    {
+      "name": "No-WebGL branch opens and closes journal through intended navigation",
+      "passed": true
+    },
+    {
+      "name": "No-WebGL branch opens and closes postcard without enabling scene controls",
+      "passed": true
+    }
+  ],
+  "passed": 3,
+  "failed": 0,
+  "scope": "Real main.js, THREE geometry/camera/raycaster/OrbitControls, Canvas textures, and app handlers. DOM/renderer/clock/timers mocked in scratch only. No GPU/browser rendering claim."
+}
